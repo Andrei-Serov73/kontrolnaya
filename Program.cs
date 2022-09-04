@@ -8,5 +8,16 @@
 //[“1234”, “1567”, “-2”, “computer science”] → [“-2”]
 //[“Russia”, “Denmark”, “Kazan”] → []
 
-int[] array = new int[10];
-Console.WriteLine(array[8]);
+string[] str1 = new string[5] {"84", "2233", "рпгпа", "*/*", "2+2"};
+string[] str2 = new string[str1.Length];
+
+void PrintStr1(string[] str1)
+{
+    for (int i = 0; i < str1.Length; i++)
+    {
+        Console.Write($"{str1[i]}, ");
+    }
+}
+Console.Write($" [ ");
+PrintStr1(str1);
+Console.Write($" ] -> ");
